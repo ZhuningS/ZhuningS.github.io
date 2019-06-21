@@ -81,17 +81,20 @@
 
 
 
-<meta name="description" content="[TOC]��������Ϣ������������ ����Ϣ���ƣ����ܹ��ˣ�����������飬����ͼƬ���� �ƹ��ˣ��˹����ܣ�������������Ϣ���˼��� Ƭ�棬��٣����ţ���ʵ��Ϣ��թƭ�Ȼ�����������������Ϣ���򵥸ɾ��������Ķ��������ŵ��µ� �͹۹������Ͻ����пϣ���ʵ�����ԣ�">
+<meta name="description" content="Docker使用记录群晖NAS以及腾讯云平台使用Docker APP配置，日常常用的命令记录 安装与镜像源使用官方提供的APP 安装好之后配置DaoCloud的加速  右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中加入下面的镜像地址:   h">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ZhuningS">
-<meta property="og:url" content="http://yoursite.com/2019/05/24/信息控制，智能过滤，内容预先分级过滤/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/06/21/Docker使用记录/index.html">
 <meta property="og:site_name" content="ZhuningS">
-<meta property="og:description" content="[TOC]��������Ϣ������������ ����Ϣ���ƣ����ܹ��ˣ�����������飬����ͼƬ���� �ƹ��ˣ��˹����ܣ�������������Ϣ���˼��� Ƭ�棬��٣����ţ���ʵ��Ϣ��թƭ�Ȼ�����������������Ϣ���򵥸ɾ��������Ķ��������ŵ��µ� �͹۹������Ͻ����пϣ���ʵ�����ԣ�">
+<meta property="og:description" content="Docker使用记录群晖NAS以及腾讯云平台使用Docker APP配置，日常常用的命令记录 安装与镜像源使用官方提供的APP 安装好之后配置DaoCloud的加速  右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中加入下面的镜像地址:   h">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-03T16:37:42.893Z">
+<meta property="og:image" content="https://ww4.sinaimg.cn/large/006tNc79ly1fed8y5a3hyj31gg0qygxi.jpg">
+<meta property="og:image" content="https://ww2.sinaimg.cn/large/006tNc79ly1fed90jvh5lj30zu056gnr.jpg">
+<meta property="og:updated_time" content="2019-06-21T04:58:15.492Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZhuningS">
-<meta name="twitter:description" content="[TOC]��������Ϣ������������ ����Ϣ���ƣ����ܹ��ˣ�����������飬����ͼƬ���� �ƹ��ˣ��˹����ܣ�������������Ϣ���˼��� Ƭ�棬��٣����ţ���ʵ��Ϣ��թƭ�Ȼ�����������������Ϣ���򵥸ɾ��������Ķ��������ŵ��µ� �͹۹������Ͻ����пϣ���ʵ�����ԣ�">
+<meta name="twitter:description" content="Docker使用记录群晖NAS以及腾讯云平台使用Docker APP配置，日常常用的命令记录 安装与镜像源使用官方提供的APP 安装好之后配置DaoCloud的加速  右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中加入下面的镜像地址:   h">
+<meta name="twitter:image" content="https://ww4.sinaimg.cn/large/006tNc79ly1fed8y5a3hyj31gg0qygxi.jpg">
 
 
 
@@ -121,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/05/24/信息控制，智能过滤，内容预先分级过滤/">
+  <link rel="canonical" href="http://yoursite.com/2019/06/21/Docker使用记录/">
 
 
 
@@ -264,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/24/信息控制，智能过滤，内容预先分级过滤/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/21/Docker使用记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ZhuningS">
@@ -293,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-24T17:35:15+08:00">
-                2019-05-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-21T11:20:07+08:00">
+                2019-06-21
               </time>
             
 
@@ -331,32 +334,37 @@
       
 
       
-        <p>[TOC]<br>��������Ϣ������������ ����Ϣ���ƣ����ܹ��ˣ�����������飬����ͼƬ����</p>
-<p>�ƹ��ˣ��˹����ܣ�������������Ϣ���˼���</p>
-<p>Ƭ�棬��٣����ţ���ʵ��Ϣ��թƭ�Ȼ�����������������Ϣ���򵥸ɾ��������Ķ�<br>�������ŵ��µ�</p>
-<p>�͹۹������Ͻ����пϣ�<br>��ʵ�����ԣ���ֱ</p>
-<p>������ŵ��µ�ý�壺Ϊ���£�������ʵ���������ʰ��ȱ��������˵��������Ҹ���<br>������˽����ڦ���̰�����Ϯ����ҥ��(��)���ַ�������˽<br>׼ȷ���������ʵ����������</p>
-<p>����Ԥ�ȷּ������ˡ����Ρ��滻����ʾ�������ˡ����׶��׵ȴʻ��������</p>
-<p>α���£�α���죬α��ѧ���ɹ�ѧ����־���������籩�����ۻ�����<br>������������̰���Ϳ־��</p>
-<p>��վ��Ϣ�ھ���Ѷ׷�٣�ʱ�̼���������Ϣ������Ŀ����鱨�ռ��������Ѷ��Google Alert����ʱʹ�ò�����˺�Ctrl+F��ʾ��</p>
-<p>���дʿ⣺<br>��������̳����<br>֪���ؼ��ʣ���ϵͳ������������һ�룬��һ����Ҫ�������ȵ㣬���׶���ӹ�����ݡ�����ʱ�е�</p>
-<p>΢�Źؼ���<br>RSS�����ࡢ��ý���������</p>
-<p>����������Σ�</p>
-<p>����ؼ���<br>������̳��</p>
-<p>������ý��<br>�����༦����·�ģ�</p>
-<p>�����������Σ�<br>�¼��£�Ӣ������ɫ�У��¹���������ý��ο�����Ҫ�������ξ�����</p>
-<p>��̳��������<br>�ǵ��¡�����ð���Դʻ㣬�����¼�/�������˺��ԡ������Ժ�ɿ���ԣ���������V�����ų�ݡ����˳���/������ţ�����ȵ���ˣ�ͷ�����ѹ��ˣ�Ӫ�����Ĺ��ˣ����ְ��Թ��ˣ�����С˵�Զ����Σ�</p>
-<p>��ϴ�ԡ�˼�붾�̡��������塢����ʷ���Ŷ����⽨�ظ����������ġ���̬��̬�������󲡶����ĸ��඾������������š�ƫ�������ӣ����Σ������£��ƶĶ���ŮȨ����������˶������ȸ��棬��������ʱ�����֣���Ϸ����������Ȧ�����ɳ���</p>
-<p>����������low����:</p>
-<p>�ܽ᣺�̾�ʽ+���ﻯ+����=ɱ�����������İ���˳��������</p>
-<p>���׶��ף����ӱ�ª���յ���������ɿ���ԡ����⡢�����ԡ��������ʻ㣬Ť��ƫ��ʻ㣬���������������ˣ�</p>
-<p>������<br>����<br>��Ȼ<br>�ض�<br>�����<br>����<br>����<br>Ӧ��<br>���</p>
-<p>���ˣ����δʻ���ˣ�����<br>��α����Ȩ������ר�ƣ��ֲ�����֪���������</p>
-<p>�����漰���� ���ˣ����壬�й������֣���������������������ͳ�Σ�����<br>�й������������������������й�����Ȩ����Ȼ����������ʹ����������֯�������������ã���ı�ۣ��ֶΣ������ض������룬ë�󶫣�ϰ��ƽ</p>
-<p>������:��Ҫ��������ѧϰ���Ʒ�����<br>note.youdao.com<br>yinxiang.com<br>github.com<br>icloud.com<br>douban.com<br>jianshu.com<br>getpocket.com<br>mindzip.net<br>shouqu.me</p>
-<p>segmentfault.com<br>inoreader.com<br>feedly.com<br>yilan.io<br>360doc.com<br>zhihu.com</p>
-<p>�������棺<br>sougo.com<br>baidu.com<br>google.com</p>
-<p>�Զ��������3�������ϣ����ձ�����</p>
+        <h1 id="Docker使用记录"><a href="#Docker使用记录" class="headerlink" title="Docker使用记录"></a>Docker使用记录</h1><p>群晖NAS以及腾讯云平台使用Docker APP配置，日常常用的命令记录</p>
+<h3 id="安装与镜像源"><a href="#安装与镜像源" class="headerlink" title="安装与镜像源"></a>安装与镜像源</h3><p>使用<a href="https://www.docker.com/docker-mac" target="_blank" rel="noopener">官方提供</a>的APP</p>
+<p>安装好之后配置<a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="noopener">DaoCloud的加速</a></p>
+<blockquote>
+<p>右键点击桌面顶栏的 docker 图标，选择 Preferences ，在 Daemon 标签（Docker 17.03 之前版本为 Advanced 标签）下的 Registry mirrors 列表中加入下面的镜像地址:</p>
+</blockquote>
+<blockquote>
+<p><a href="http://27d936ab.m.daocloud.io/" target="_blank" rel="noopener">http://27d936ab.m.daocloud.io</a></p>
+</blockquote>
+<blockquote>
+<p>重启docker</p>
+</blockquote>
+<h3 id="Docker命令"><a href="#Docker命令" class="headerlink" title="Docker命令"></a>Docker命令</h3><h4 id="镜像搜索-docker-search"><a href="#镜像搜索-docker-search" class="headerlink" title="镜像搜索 docker search *"></a>镜像搜索 docker search *</h4><p>搜索公共镜像</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79ly1fed8y5a3hyj31gg0qygxi.jpg" alt="docker search"></p>
+<h4 id="拉取镜像-docker-pull-NAME"><a href="#拉取镜像-docker-pull-NAME" class="headerlink" title="拉取镜像 docker pull NAME"></a>拉取镜像 docker pull NAME</h4><p>这个NAME就是刚刚搜索出来的NAME栏</p>
+<p>下载一个lnmp的镜像，不选择CentOS7是因为可能遇到systemctl起不来的坑</p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNc79ly1fed90jvh5lj30zu056gnr.jpg" alt="docker pull imagine10255/centos6-lnmp-php56"></p>
+<h4 id="启动镜像-docker-run-–"><a href="#启动镜像-docker-run-–" class="headerlink" title="启动镜像 docker run –"></a>启动镜像 docker run –</h4><p>eg: <code>docker run -i -t --name=test -p 0.0.0.0::80 -v ~/Desktop/html:/www/html lc4t/centos6:lnmp5.6 /bin/bash</code></p>
+<p><code>-i -t /bin/bash</code> 是用来做前台数据交互</p>
+<p><code>-p 0.0.0.0::80</code>是将容器的80端口映射到外部的0.0.0.0的随机端口，用<code>-P</code>将会自动映射所有</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-p`的参数支持`ip:hostPort:containerPort、 ip::containerPort、hostPort:containerPort</span><br></pre></td></tr></table></figure>
+<p><code>--dns=IP</code> 设置dns地址，如果无法解析域名需要设置</p>
+<p><code>--name=test</code> 写个名字方便</p>
+<p><code>-v</code> 是用来做目录映射Host:Container</p>
+<p><code>-d</code> 后台运行</p>
+<h3 id="Docker容器系统清理"><a href="#Docker容器系统清理" class="headerlink" title="Docker容器系统清理"></a><strong>Docker容器系统清理</strong></h3><p>docker system prune</p>
+<p>清理所有无用的镜像、容器</p>
+<h4 id="进入停止的镜像-docker-attack-ID"><a href="#进入停止的镜像-docker-attack-ID" class="headerlink" title="进入停止的镜像 docker attack ID"></a>进入停止的镜像 docker attack ID</h4><p>当<code>exit</code>退出后，镜像处于停止状态，再次进入使用<code>docker attach ID</code>，这里ID能唯一识别就好，也可以是NAME或TAG</p>
+<h4 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h4><p><code>docker ps -a</code> 显示所有镜像</p>
+<p><code>docker images</code> 已经pull的镜像包</p>
+<p><code>docker ps -a | awk &#39;{ if ($1 != &quot;CONTAINER&quot;) {print $1;}}&#39; | xargs docker rm</code> 删除停止的镜像们</p>
 
       
     </div>
@@ -381,7 +389,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/24/手机信息过滤/" rel="next" title>
+              <a href="/2019/06/21/群晖NAS崩溃系统修复/" rel="next" title>
                 <i class="fa fa-chevron-left"></i> 
               </a>
             
@@ -391,7 +399,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/24/自制全文RSS汇总（附 推荐工具,转自豆瓣）/" rel="prev" title>
+              <a href="/2019/06/21/适用于个人家庭的信息管理库（侧重信息过滤与内容筛选）2/" rel="prev" title>
                  <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -445,8 +453,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -497,6 +514,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker使用记录"><span class="nav-number">1.</span> <span class="nav-text">Docker使用记录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装与镜像源"><span class="nav-number">1.0.1.</span> <span class="nav-text">安装与镜像源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker命令"><span class="nav-number">1.0.2.</span> <span class="nav-text">Docker命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像搜索-docker-search"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">镜像搜索 docker search *</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#拉取镜像-docker-pull-NAME"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">拉取镜像 docker pull NAME</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启动镜像-docker-run-–"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">启动镜像 docker run –</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker容器系统清理"><span class="nav-number">1.0.3.</span> <span class="nav-text">Docker容器系统清理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#进入停止的镜像-docker-attack-ID"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">进入停止的镜像 docker attack ID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他命令"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">其他命令</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
