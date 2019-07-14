@@ -88,13 +88,13 @@
 <meta property="og:site_name" content="ZhuningS">
 <meta property="og:description" content="title: 群晖NAS崩溃系统修复date: 2019-01-08 ‏‎17:13:32tags:群晖;故障；命令;系统；Linux #群晖NAS崩溃系统修复 系统环境： DS3615xsDSM 6.1.4-15217 Update 12017/11/10 具体配置：主板：迷你NANO小主板CPU：英特尔J1900 四核CPU 做NAS高性能低功耗（装一个3.5硬盘工作仅18W左右）内存：单根">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://am.zdmimg.com/201811/02/5bdc0910481736247.png_e680.jpg">
-<meta property="og:image" content="https://qnam.smzdm.com/201811/02/5bdc1a5087f527244.png_e680.jpg">
-<meta property="og:updated_time" content="2019-07-14T03:01:50.288Z">
+<meta property="og:image" content="https://i.loli.net/2019/07/14/5d2aa0ccd890091375.jpg">
+<meta property="og:image" content="c:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/1563074722257.png">
+<meta property="og:updated_time" content="2019-07-14T03:26:27.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZhuningS">
 <meta name="twitter:description" content="title: 群晖NAS崩溃系统修复date: 2019-01-08 ‏‎17:13:32tags:群晖;故障；命令;系统；Linux #群晖NAS崩溃系统修复 系统环境： DS3615xsDSM 6.1.4-15217 Update 12017/11/10 具体配置：主板：迷你NANO小主板CPU：英特尔J1900 四核CPU 做NAS高性能低功耗（装一个3.5硬盘工作仅18W左右）内存：单根">
-<meta name="twitter:image" content="https://am.zdmimg.com/201811/02/5bdc0910481736247.png_e680.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2019/07/14/5d2aa0ccd890091375.jpg">
 
 
 
@@ -201,16 +201,6 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
-            
-            日程表
           </a>
         </li>
       
@@ -330,9 +320,10 @@
 <p>第三个很多G：存储分区</p>
 <h4 id="总结：群晖会在硬盘上格式化一个分区出来安装系统，崩溃的时候，可以尝试格式话这个分区，然后重装"><a href="#总结：群晖会在硬盘上格式化一个分区出来安装系统，崩溃的时候，可以尝试格式话这个分区，然后重装" class="headerlink" title="总结：群晖会在硬盘上格式化一个分区出来安装系统，崩溃的时候，可以尝试格式话这个分区，然后重装"></a>总结：群晖会在硬盘上格式化一个分区出来安装系统，崩溃的时候，可以尝试格式话这个分区，然后重装</h4><p>参考文章：</p>
 <p>由于我没有做Raid，所以每块硬盘都是相对独立的。一般basic模式的硬盘，群晖给其分区的结构是下图这样的。2.3G为系统分区，2G为交换分区，后面的大空间才是磁盘存储分区。既然ubuntu下可以正常读取磁盘存储分区的数据，也就说明存储分区是没有损坏的，进不去群晖系统八成是系统分区出了问题。</p>
-<p><a href="https://post.smzdm.com/p/a3gz6xd5/pic_40/" target="_blank" rel="noopener"><img src="https://am.zdmimg.com/201811/02/5bdc0910481736247.png_e680.jpg" alt="群晖【番外篇】群晖系统崩溃后的数据抢救"></a></p>
+<p><img src="https://i.loli.net/2019/07/14/5d2aa0ccd890091375.jpg" alt></p>
 <p>​       当遇到这种情况时可以通过群晖本身的机制来修复损坏的系统分区。比如我遇到的断电引起的DSM系统错误导致无法启动, 可以这样解决——拔掉原硬盘A，找个空硬盘B装上重装DSM系统（B盘的数据会被清空，所以要用空硬盘）。关机后装回原硬盘A，开机登入管理界面还原系统，进入系统后进入存储管理员，可以看到修复按钮。</p>
-<p><a href="https://post.smzdm.com/p/a3gz6xd5/pic_41/" target="_blank" rel="noopener"><img src="https://qnam.smzdm.com/201811/02/5bdc1a5087f527244.png_e680.jpg" alt="看到他就说明有救了"></a>看到他就说明有救了</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1563074722257.png" alt="1563074722257"></p>
+<p>看到他就说明有救了</p>
 <p>​       不过这种方法我实测是需要用实体硬盘才能实现，虽然理论上虚拟硬盘应该也能保留系统分区，但用虚拟硬盘时每次都不成功。</p>
 
       
@@ -449,7 +440,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
